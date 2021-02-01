@@ -8,6 +8,10 @@ int main()
   printf("Enter 2nd number:");
   scanf("%d",&n2);
   n3=sum(n1,n2);
-  printf("Sum:%d",n3);
   return 0;
+}
+int sum(int n1,int n2){
+  int n4;
+  n4=n1+n2;
+  return(n4);
 }
