@@ -1,49 +1,25 @@
 //WAP to find the distance between two points using structures and 4 functions.
 #include<stdio.h>
 #include<math.h>
-Int main()
+#include<stdlib.h>
+struct point
 {
-float x1,x2,y1,y2,d;
-float one();
-float two();
-float three();
-float four();
-
-x1=one();
-y1=two();
-
-x2=three();
-y2=four();
-d=sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)));
-printf(“Distance=%f”,d);
-return 0;
-}
-
-float one()
+   int x,y;
+};
+float dist(struct pointa,struct pointb)
 {
-   float h;
-   printf(“Enter x coordinate of point 1=”);
-   scanf(“%f”,&h);
-   return h;
+   float distance;
+   distance=sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y));
+   return distancce;
 }
-float two()
+int main()
 {
-   float h;
-   printf(“Enter y coordinate of point 1=”);
-   scanf(“%f”,&h);
-   return h;
+   struct pointa,pointb;
+   printf("Enter first coordinates=");
+   scanf("%f%f",&a.x,&a.y);
+   printf("Enter second coordinates=");
+   scanf("%f%f",&b.x,&b.y);
+   printf("Distance between the two points=",dist(a,b));
+   return 0;
 }
-float three()
-{
-   float h;
-   printf(“Enter x coordinate of point 2=”);
-   scanf(“%f”,&h);
-   return h;
-}
-float four();
-{
-   float h;
-   printf(“Enter y coordinate of point 2=”);
-   scanf(“%f”,h);
-   return h;
-}
+   
