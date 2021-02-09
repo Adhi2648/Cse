@@ -33,14 +33,14 @@ float two()
    scanf(“%f”,&h);
    return h;
 }
-point three()
+float three()
 {
    float h;
    printf(“Enter x coordinate of point 2=”);
    scanf(“%f”,&h);
    return h;
 }
-point four();
+float four();
 {
    float h;
    printf(“Enter y coordinate of point 2=”);
