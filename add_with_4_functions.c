@@ -1,4 +1,6 @@
 //Write a program to add two user input numbers using 4 functions.
+
+
 #include<stdio.h>
 int fir()
 {
@@ -30,4 +32,3 @@ int sum=add(x,y);
 print(sum);
 return 0;
 }
-
