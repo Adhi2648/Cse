@@ -1,34 +1,42 @@
 //Write a program to add two user input numbers using 4 functions.
 
-
 #include<stdio.h>
-int fir()
+int
+fir ()
 {
-int n;
-printf("Enter num 1 ");
-scanf("%d",&n);
-return n;
+  int n;
+  printf ("Enter num 1 ");
+  scanf ("%d", &n);
+  return n;
 }
-int sec()
+
+int
+sec ()
 {
-int n;
-printf("Enter num 2");
-scanf("%d",&n);
-return n;
+  int n;
+  printf ("Enter num 2");
+  scanf ("%d", &n);
+  return n;
 }
-int add(int fir,int sec)
-{ 
-return (fir+sec);
-}
-int print(int sum)
+
+int
+add (int fir, int sec)
 {
- printf("sum  = %d\n",sum);
+  return (fir + sec);
 }
-int main()
+
+int
+print (int sum)
 {
-int x=fir();
-int y=sec();
-int sum=add(x,y);
-print(sum);
-return 0;
+  printf ("sum  = %d\n", sum);
+}
+
+int
+main ()
+{
+  int x = fir ();
+  int y = sec ();
+  int sum = add (x, y);
+  print (sum);
+  return 0;
 }
