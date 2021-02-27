@@ -9,40 +9,39 @@ int main ()
   float three ();
   float four ();
   x1 = one ();
-  y1 = two ();
-  x2 = three ();
-  y2 = four ();
-  d = sqrt (((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1)));
-  printf ("Distance = %f ", d);
+  y1 =one ();
+  x2 =two();
+  y2 = two ();
   return 0;
 }
 
 float one ()
 {
-  float h;
+  float h,m;
   printf ("Enter x coordinate of point 1 = ");
   scanf ("%f ", &h);
-  return h;
-}
-
-float two ()
-{
-  float h;
   printf ("Enter y coordinate of point 1 = ");
-  scanf ("%f", &h);
+  scanf ("%f", &m);
   return h;
+  return m;
 }
-float three()
+float two()
 {
    float h;
    printf("Enter x coordinate of point 2=");
    scanf("%f",&h);
-   return h;
-}
-float four();
-{
-   float h;
    printf("Enter y coordinate of point 2=");
-   scanf("%f",h);
+   scanf("%f",&m);
    return h;
+   return m;
 }
+float square()
+{
+   d = sqrt (((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1)));
+   return d;
+}
+float res()
+{
+     printf ("Distance = %f ", d);
+}
+
